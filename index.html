@@ -1,0 +1,126 @@
+<!DOCTYPE html>     
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>New Tab</title>
+        <link rel="shortcut icon" type="x-icon" href="./assets/images/favicon/favicon_2.png">
+        <link href="./assets/css/style_2.css" rel="stylesheet" type="text/css" >
+        <meta name="viewport" content="device=device-width, initial-scale=1">
+	      <link href="./assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" >
+	      <link href="./assets/css/style_1.css" rel="stylesheet" type="text/css" >
+	      <script src="./assets/js/main.js" defer></script>
+      	<script src="./assets/js/cl.js" defer></script>
+        
+    </head>
+    <body>
+    <div class="clock">
+      <div class="numbers">
+        <span style="--i:0"><b>12</b></span>
+        <span style="--i:0.3333333333333333"><b>1</b></span>
+        <span style="--i:0.6666666666666666"><b>2</b></span>
+        <span style="--i:1"><b>3</b></span>
+        <span style="--i:1.3333333333333333"><b>4</b></span>
+        <span style="--i:1.6666666666666666"><b>5</b></span>
+        <span style="--i:2"><b>6</b></span>
+        <span style="--i:2.3333333333333333"><b>7</b></span>
+        <span style="--i:2.6666666666666666"><b>8</b></span>
+        <span style="--i:3"><b>9</b></span>
+        <span style="--i:3.3333333333333333"><b>10</b></span>
+        <span style="--i:3.6666666666666666"><b>11</b></span>
+
+        <div class="circle" id="hr"><i></i></div>
+        <div class="circle" id="mn"><i></i></div>
+        <div class="circle" id="sc"><i></i></div>
+        </div>  
+    </div>
+    
+    <script>
+      let hr = document.querySelector('#hr');
+      let mn = document.querySelector('#mn');
+      let sc = document.querySelector('#sc');
+
+
+     setInterval(()=>{
+        let day = new Date();
+      let hh = day.getHours() *30;
+      let mm = day.getMinutes() * 6;
+      let ss = day.getSeconds() * 6;
+
+
+      hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`
+      mn.style.transform = `rotateZ(${mm}deg)`;
+      sc.style.transform = `rotateZ(${ss}deg)`;
+
+     })
+  </script>
+    
+
+<div class="content">
+  <div id="clockDisplay" class="clockStyle"></div>
+
+  <div class="search-wrapper">
+    <div class="search-bar">
+      <div class="search-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <form action="https://searchnet.org/index.html?k=.." id="search-form">
+        <input id="search-input" type="text" name="k" placeholder="What would you like to search?" autocomplete="off" />
+      </form>
+
+    </div>
+  </div>
+  <div class="social-media">
+    <a href="https://binance.com" target="_blank">
+      <img src="./assets/images/social-media/binance2.png" >
+    </a>
+    <a href="https://s.click.aliexpress.com/e/_DdWBmT3" target="_self">
+      <img src="./assets/images/social-media/aliexpress.png" >
+    </a>
+    <a href="https://ebay.com" target="_self">
+      <img src="./assets/images/social-media/ebay2.png" >
+    </a>		
+    <a href="https://web.whatsapp.com/" target="_self">
+      <img src="./assets/images/social-media/whatsapp.jpg" >
+    </a>		
+    <a href="https://www.facebook.com/" target="_self">
+      <img src="./assets/images/social-media/fb.png" >
+    </a>		
+    <a href="https://www.youtube.com" target="_self">
+      <img src="./assets/images/social-media/youtube.png" >
+    </a>	
+    <a href="https://www.instagram.com/?hl=en" target="_self">
+      <img src="./assets/images/social-media/instagram.png" >
+    </a>	
+    <a href="https://www.messenger.com/" target="_self">
+      <img src="./assets/images/social-media/messenger.png" >
+    </a>				
+    <a href="https://mail.google.com/" target="_self">
+      <img src="./assets/images/social-media/gmail.png" >
+    </a>
+    <a href="https://web.telegram.org/k/" target="_self">
+      <img src="./assets/images/social-media/telegram.png" >
+    </a>
+    <a href="https://amzn.to/" tasrget="_self">
+      <img src="./assets/images/social-media/amazon3.png" >
+    </a>
+    <a href="https://fiverr.com" target="_self">
+      <img src="./assets/images/social-media/fiverr.png" >
+    </a>
+    <a href="https://www.booking.com/index.html?aid=7931634" target="_self">
+      <img src="./assets/images/social-media/booking2.png" >
+    </a>
+    <a href="https://www.daraz.lk/" target="_self">
+      <img src="./assets/images/social-media/daraz.jpg" >
+    </a>
+    <a href="https://song.lk" target="_self">
+      <img src="./assets/images/social-media/song.lk.png">
+    </a>
+  </div>
+  <marquee><P><h2><b><i>Created by Dimantha Lakisuru</i></b></h2></P></marquee>
+</div>
+
+</body>
+</html>
+    
